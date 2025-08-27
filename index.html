@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zurna Scripts</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      animation: backgroundShift 10s infinite alternate;
+    }
+    @keyframes backgroundShift {
+      from { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
+      to { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
+    }
+    h1 {
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .slot-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      font-size: 14px;
+      resize: none;
+      box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    textarea:focus {
+      outline: none;
+      transform: scale(1.05);
+      box-shadow: 6px 6px 20px rgba(0,0,0,0.3);
+    }
+    audio {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎶 Zurna Scripts 🎶</h1>
+  <div class="slot-container">
+    <textarea placeholder="Writing Slot 1"></textarea>
+    <textarea placeholder="Writing Slot 2"></textarea>
+    <textarea placeholder="Writing Slot 3"></textarea>
+    <textarea placeholder="Writing Slot 4"></textarea>
+    <textarea placeholder="Writing Slot 5"></textarea>
+    <textarea placeholder="Writing Slot 6"></textarea>
+    <textarea placeholder="Writing Slot 7"></textarea>
+    <textarea placeholder="Writing Slot 8"></textarea>
+    <textarea placeholder="Writing Slot 9"></textarea>
+    <textarea placeholder="Writing Slot 10"></textarea>
+  </div>
+
+  <!-- Background Music -->
+  <audio autoplay loop controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
